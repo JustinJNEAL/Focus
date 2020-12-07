@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Break Time">
+
+        <ListPreference
+            android:id="@+id/break_preference"
+            android:defaultValue="5"
+            android:entries="@array/break_options"
+            android:entryValues="@array/break_values"
+            android:key="sshort"
+            android:title="Break Time" />
+        
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="About">
+
+        <PreferenceScreen
+            android:key="version"
+            android:title="Version"
+            android:summary="1.0" >
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+</PreferenceScreen>
